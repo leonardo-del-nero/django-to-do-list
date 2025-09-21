@@ -3,12 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base 1</title>
+    <meta name="viewport" content="width=device-width, in  itial-scale=1.0">
+    <title>{% block title %}Base 64{% endblock %}</title>
 </head>
 
 <body>
-    <p>{{name}}</p>
+    <div id="content", name="content">
+        
+        {% block content %}
+
+            
+
+        {% endblock %}
+
+    </div>
 </body>
 
 </html>

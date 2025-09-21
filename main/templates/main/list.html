@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+
+{% block title%} TODO LIST {% endblock %}
+
+{% block content %}
+
+    <h1>{{ls.name}}</h1>
+
+    <ul>
+    {% for i in ls.item_set.all %}
+    
+        {% if i.complete ==  True %}
+
+            <li>{{i.text}} -> COMPLETE</li>
+
+        {% else %}
+
+            <li>{{i.text}} -> INCOMPLETE</li>
+
+        {% endif %}
+
+    {%endfor%}
+    </ul>
+
+{% endblock %}
